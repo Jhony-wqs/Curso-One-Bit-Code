@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h2>Cadastro de liga dos astronautas</h2>
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" autocapitalize="">
+        </div><br>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email"autocapitalize>
+            <label for="senha">- Password:</label>
+            <input type="password" name="senha" id="senha">
+        </div><br>
+        <div>
+            <label for="data">Data de nascimento:</label>
+            <input type="date" name="data" id="data">
+            <label for="foto">- Foto</label>
+            <input type="file" name="foto" id="foto">
+        </div><br>
+        <div>
+            <label for="pais">Nacionalidade</label>
+            <select name="pais" id="pais">
+                <option value=""></option>
+                <option value="pais">Brasileiro(a)</option>
+                <option value="pais">Russo(a)</option>
+                <option value="pais">Argentino(a)</option>
+            </select>
+            
+            <label for="sexo">-Genero:</label>
+            <label for="sexof">F</label>
+            <input type="radio" name="sexo" id="">
+            <label for="sexom">M</label>
+            <input type="radio" name="sexo" id="">
+
+        </div>
+
+        <h3>Suas principais qualidades:</h3>
+        <div>
+            <label for="int">Inteligência</label>
+            <input type="checkbox" name="int" id="int">|
+            <label for="res"> Resiliência</label>
+            <input type="checkbox" name="res" id="res">|
+            <label for="fis"> Preparo Físico</label>
+            <input type="checkbox" name="fis" id="fis">|
+            <label for="edu"> Educação</label>
+            <input type="checkbox" name="edu" id="edu">|
+        </div><br>
+        <div>
+            <textarea name="texto" id="" cols="30" rows="10"   placeholder="Porque você gostaria de ser um astronauta?"></textarea>
+        </div><br>
+        <input type="submit" value="Criar">
+
+        
+
+       
+        
+        
+        
+    </form>
+</body>
+</html>
