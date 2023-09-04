@@ -1,0 +1,17 @@
+ul{
+    color: chartreuse;
+}
+h2{
+    background-color: aqua;
+}
+h1{
+    border: 1px solid red;
+    display: inline;
+}
+body{
+    background-image: url('https://t.ctcdn.com.br/dk5TcKtcZZh2C91MjFR-LvpBnDY=/840x473/smart/i374256.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}

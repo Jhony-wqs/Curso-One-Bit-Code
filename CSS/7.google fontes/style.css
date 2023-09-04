@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@500&display=swap');
+
+
+
+
+
+
+h1{
+   text-align: right;
+    font-family: 'Dancing Script' ;
+
+}
+.p{
+    font-family:'Caveat' ;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+}
+p{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 40px;
+}
+
+
+
+
+/* fontes importada do google fonts e implementada no css e outra no html */

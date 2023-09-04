@@ -1,0 +1,25 @@
+*{
+    border: 1px solid black;
+ } /*selecion todas as tag do html */
+
+ ul li{
+    color: orangered;
+ }/*  seletor de descendência */
+
+ ul > li {
+    color: blue;
+ }/* so muda os filhos diretos do ul , no exemplo como o li que está dentro da DIV não e filho direto do ul ele perde o valor dos outros*/
+
+ h1 + h2{
+    
+border: 1px solid orange; 
+}/*seletor adjacnte ele somente seleciona o elemento após  no caso oque está depois do h1 no caso h2*/
+
+a[href="aqui.com"]  {
+    color: chartreuse;
+}/*seletor por atributo ele vai pegar pelo atributo que for colocado na teg */
+ 
+
+li:nth-of-type(1){
+    background-color: aqua;
+}/*seletor de pseudo classe ele seleciona um ou mais tegs dentro de uma lista ou entre outros exemplos*/
