@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formúlario</title>
+</head>
+<body>
+    <h1>Formúlario</h1>
+    <form action="">
+        <!--campo de texto-->
+       <label for="nome">Nome:</label>
+       <input type="text" name="nome" id="nome">
+       <br><br>
+       <!--campo de Email-->
+       <label for="email">E-mail</label>
+       <input type="email" name="email" id="email" autocomplete="email" required>
+       <BR><BR>
+        <!--campo de senha-->
+       <label for="senha">Senha:</label>
+       <input type="password" name="senha" id="senha">
+       <br><br>
+       <!--campo de seleção 
+           *Colocar um value pra indentficação do valor marcado
+           *E sempre colocar o mesmo name para poder fazer a marcação de um caixa de radio
+        -->
+       <label >Genero:</label>
+       <input type="radio" name="Genero" id="masculino" value="Masc">
+       <label for="masculino">Masculino</label>
+       <input type="radio" name="Genero" id="feminino" value="femi">
+       <label for="feminino">Feminino</label>
+       <br><br>
+       <!--campo de seleção múltipla (checkbox)
+          *Colocar um value também para fazer a ligação com o name enviado na url-->
+       <label >Interesses:</label>
+       <label for="backend">Back-End</label>
+       <input type="checkbox" name="interesses" id="backend" value="backend">
+       <label for="frontend">Front-End</label>
+       <input type="checkbox" name="interesses" id="frontend" value="frontend">
+       <label for="mobail">Mobail</label>
+       <input type="checkbox" name="interesses" id="mobail" value="mobail">
+       <br><br>
+       <!--Campo de data-->
+       <label for="data">Data de Nascimento:</label>
+       <input type="date" name="nascimento" id="data">
+       <br><br>
+       <!--Campo de arquivo(upload)-->
+       <label for="foto">Foto de Perfil:</label>
+       <input type="file" name="avatr" id="foto">
+       <br><br>
+       <!--Campo de caixa de seleção-->
+       <label for="situacao">Situação:</label>
+       <select name="atuacao" id="situacao">
+             <option value="" disabled selected>Escolha uma das opções</option>
+             <option value="estudante">Estudante de programação</option>
+             <option value="estagiario">Atuando como estagiário</option>
+             <option value="junior">Atuando como júnior</option>
+             <option value="pleno">Atuando como Pleno</option>
+             <option value="senior">Atuando como Sênior</option>
+             
+            </select>
+            <br>
+            <label for="sobre">Sobre Mim:</label>
+            <br>
+            
+            <textarea name="sobre" id="sobre" cols="30" rows="10" placeholder="Escreva um poco sobre você...."></textarea>
+            <br><br>
+
+       <!--botão submisão para enviar o formulario-->
+       <input type="submit" value="enviar">
+
+    </form>
+</body>
+</html>
