@@ -10,7 +10,7 @@ do{
    
    switch(opcao){
     case '1':
-        saldo += Number(window.prompt('Informe o valor a ser adcionado:'))
+        saldo += Number(window.prompt('Informe o valor a ser adicionado:'))
         break
     case '2':
         saldo -= Number(window.prompt('Informe o valor a ser removido:'))

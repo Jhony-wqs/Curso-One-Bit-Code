@@ -4,7 +4,7 @@ do{
     opcao = window.prompt('Fila de espera\n' + nomes +'\n1 - Novo paciente' + '\n2 - Consulta paciente' + "\n3 - Sair")
    switch(opcao){
        case '1':
-        let nome = nomes.push(prompt('Informe o nome do paciente a ser adcionado'))
+        let nome = nomes.push(prompt('Informe o nome do paciente a ser adicionado'))
        
          break
        case '2':

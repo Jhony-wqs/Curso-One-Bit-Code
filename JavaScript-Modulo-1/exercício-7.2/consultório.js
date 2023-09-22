@@ -9,9 +9,9 @@ do{
         paciente += (i + 1) + 'º - '+ fila[i] + '\n'
     }
     opcao = window.prompt(
-        'Pacientes\n' 
+        '--- Pacientes ---\n' 
         + paciente + 
-        '\nEscolha uma opção' + 
+        '\n-- Escolha uma opção --' + 
         '\n1. Novo paciente' + 
         '\n2. Consultar paciente' + 
         '\n3. Sair')
@@ -22,7 +22,11 @@ do{
                 break
             case '2':
                 let pacinteConsultado = fila.shift()
-                alert(pacinteConsultado + '  foi retirado da fila')
+                if(pacinteConsultado){
+                    alert(pacinteConsultado + '  foi retirado da fila !')
+                }else{
+                    alert('Não a mais pacientes na fila !')
+                }
                 break
             case '3':    
                 alert('Saindo do programa...')
