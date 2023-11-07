@@ -66,5 +66,13 @@ const personagens = [
 
      const repita = personagens.forEach(function(personagem){
          
-        console.log(personagem.nivel)
+        //console.log(personagem.nivel)
      })
+
+
+
+     personagens.sort(function(a,b){
+        return a.nivel - b.nivel
+     })
+
+     console.log(personagens)
