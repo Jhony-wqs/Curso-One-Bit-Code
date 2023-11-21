@@ -305,6 +305,40 @@ const arrayUniversit = universities.map((universitie) =>{
 })
 
 
-console.log(arrayUniversit)
+// console.log(arrayUniversit)
 
+const products = [
+  { name: "Desinfetante Veja ", price: 10, barCode: 98293489238, quantity: 1},
+  { name: "Ketchup Hellmann's ", price: 8, barCode: 585122289238, quantity: 4},
+  { name: "Milho Enlatado Zero-Six ", price: 6, barCode: 56862359487, quantity: 6},
+  { name: "Cereal Nescal Ball ", price: 20, barCode: 19732584692, quantity: 2},
+  { name: "Biscoito Trakinas ", price: 5, barCode: 16749583215, quantity: 1},
+];
+
+
+
+const totalPrice = products.reduce((acc,product) => acc + product.price,0)
+
+
+// console.log(totalPrice)
+const obj = {
+      comprado: [],
+      quantitade:0,
+      valorTotal:0,
+}
+ const SomaProdutos = (products.reduce((acc, product) =>{
+     acc.comprado.push(product.name)
+     acc.quantitade += product.quantity
+     acc.valorTotal += (product.price*product.quantity)
+     
+
+     return acc
+
+ },obj)
+   
+ )
+  
+
+ console.log(SomaProdutos)
+  
 
