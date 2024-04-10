@@ -1,9 +1,15 @@
 {
     "cSpell.language": "pt,pt-BR",
     "cSpell.words": [
+        "brothers",
         "checkbox",
         "climb",
+        "friends",
+        "Jhony",
         "lineup",
+        "Uncaught",
         "Vegano"
-    ]
+    ],
+    "powermode.enabled": true,
+    "powermode.shake.enabled": false
 }
