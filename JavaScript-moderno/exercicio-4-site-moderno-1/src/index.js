@@ -1,4 +1,4 @@
-// src/index.js
+
 
 let num = document.getElementById('cx');
 let sel = document.getElementById('sel');
