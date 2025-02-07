@@ -1,0 +1,143 @@
+/* Define o box-sizing para border-box e define a fonte padrão para todos os elementos */
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a cor de fundo e a cor do texto para o corpo da página */
+body {
+    background-color: #1c1a1d;
+    color: #fff;
+}
+
+/* Define o layout flexível para o elemento main */
+main {
+    display: flex;
+    gap : 2rem;
+    margin: 0 2rem;
+}
+
+/* Define que o formulário dentro do main ocupará 1 parte do espaço flexível */
+main > form {
+    flex: 1;
+}
+
+/* Define que a div dentro do main ocupará 3 partes do espaço flexível */
+main > div {
+    flex: 3;
+}
+
+/* Define a margem para o elemento h1 */
+h1 {
+    margin :2rem 2rem 0;
+}
+
+/* Define o estilo para o elemento h2 */
+h2 {
+    background-color:  #39353b;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+/* Define o estilo para o elemento label */
+label {
+    display: block;
+    margin: 1.5rem 0 0.5rem;
+}
+
+/* Define o estilo para o elemento input */
+input {
+    background-color: #39353b;
+    border: 0;
+    border-radius: 0.25rem;
+    color: #fff;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+/* Define o estilo para o elemento button */
+button {
+    background-color: #6bf394;
+    border: 0;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Define o estilo para o botão quando o mouse está sobre ele */
+button:hover {
+    cursor: pointer;
+    filter: brightness(0.9);
+}
+
+/* Define a margem superior e a largura para o botão dentro do formulário */
+form > button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Define a margem esquerda para o botão que segue outro botão */
+button + button {
+    margin-left: 1rem;
+}
+
+/* Define a largura para o elemento com a classe transaction */
+.transaction {
+    width: 100%;
+}
+
+/* Define o layout flexível e o estilo para o elemento com a classe transaction */
+.transaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #39353b;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Define a margem superior para o primeiro elemento com a classe transaction */
+.transaction:first-child {
+    margin-top: 1rem;
+}
+
+/* Define o estilo para os spans dentro do elemento com a classe transaction */
+.transaction > span {
+    flex: 1;
+}
+
+/* Define a margem direita e o alinhamento do texto para o elemento com a classe transaction-amount */
+.transaction-amount {
+    margin-right: 4rem;
+    text-align: end;
+}
+
+/* Define a cor do texto para o elemento com a classe transaction-amount e credit */
+.transaction-amount.credit {
+    color: #6bf394;
+}
+
+/* Define a cor do texto para o elemento com a classe transaction-amount e debit */
+.transaction-amount.debit {
+    color: #f64348;
+}
+
+/* Define a cor de fundo para o botão com a classe edit-btn */
+.edit-btn {
+    background-color: #7bb4ff;
+}
+
+/* Define a cor de fundo para o botão com a classe delete-btn */
+.delete-btn {
+    background-color: #f64348;
+}
+
+/* Define o layout flexível para o elemento main em telas menores que 768px */
+@media screen and (max-width:768px) {
+    main {
+        flex-direction: column;
+    }
+}
