@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+      "target": "esnext",// O copilador vai usar a ultima versão do Js.
+      "outFile": "main.js" // saida com o nome do arquivo
+    }
+  }
+
+  // Configuração do copilador ts
