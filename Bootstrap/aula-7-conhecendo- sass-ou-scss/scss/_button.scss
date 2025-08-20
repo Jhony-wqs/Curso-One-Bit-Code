@@ -1,0 +1,67 @@
+@use 'sass:color';
+@use 'variables' as *;
+
+$color-dark: #232323;
+$color-light: #fafafa;
+$color-primary: #5f4fff;
+$color-secondary: #ff9f00;
+$color-success: #3eff7e;
+$color-danger: #ff3e3e;
+
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 3rem;
+$spacing-lg: 5rem;
+
+@mixin background-with-hover($bg-color: $color-light, $text-color: $color-dark) {
+    background-color: $bg-color;
+    color: $text-color;
+
+    &:hover {
+        background-color: color.scale($bg-color, $lightness: -50%);
+    }
+}
+
+.btn {
+    background-color:  $color-light;
+    color: $color-dark;
+    border: none;
+    border-radius:  .25rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: $spacing-xs $spacing-xs * 1.5; 
+    font-size: $spacing-sm;
+    transition: 0.15s;
+
+    &:hover {
+        background-color: color.scale($color-light, $lightness: -50%);
+    }
+}
+
+.btn-primary {
+
+    @include background-with-hover($color-primary, $color-light);
+
+}
+
+.btn-secondary {
+    @include background-with-hover($color-secondary, $color-light);
+}
+
+.btn-success {
+    background-color: $color-success;
+    color: $color-light;
+
+    &:hover {
+        background-color: color.scale($color-success, $lightness: -40%);
+    }
+}
+
+.btn-danger {
+    background-color: $color-danger;
+    color: $color-light;
+
+    &:hover {
+        background-color: color.scale($color-danger, $lightness: -40%);
+    }
+}   

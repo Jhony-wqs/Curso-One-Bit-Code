@@ -1,0 +1,8 @@
+// Usando o mixin em arquivo separado em incluído em outros arquivos. Ele funciona de forma parecida com funções em outras linguagens de programação com uso de parâmetros.
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}

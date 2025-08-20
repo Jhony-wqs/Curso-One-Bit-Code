@@ -1,0 +1,17 @@
+@use 'variaveis' as *;
+@use 'displey' as *; // Importando o arquivo de mixins
+// Por convenção o nome dos arquivos deve ter um underline no início.
+header {
+   @include flex(row); // Incluindo o mixin do arquivo _displey.scss
+    background-color: $primary;
+   
+    // Dentro do scss e permitido usar encadeamento  como se fosse uma linguagem de programação.
+    button {
+        background-color: aqua;
+        padding: .5rem;
+        &:hover { // Para usar pseudo-elementos, é necessário usar o & para referenciar o elemento pai.
+            background-color: darken(aqua, 10%);
+            color: white;
+        }
+    }
+}

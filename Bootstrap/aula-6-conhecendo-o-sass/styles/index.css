@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  background-color: rgba(51, 51, 221, 0.6784313725);
+}
+header button {
+  background-color: aqua;
+  padding: 0.5rem;
+}
+header button:hover {
+  background-color: #00cccc;
+  color: white;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
+  background-color: rgba(190, 168, 240, 0.6784313725);
+}/*# sourceMappingURL=index.css.map */

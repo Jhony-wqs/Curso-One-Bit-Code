@@ -1,0 +1,29 @@
+@use 'button' as *;
+@use 'variables' as *;
+@use 'forms' as *;
+
+
+body {
+    background-color: $color-dark;
+    color: $color-light;
+    font-family: $font-sans;
+}
+
+p {
+    margin-top: $spacing-sm;
+}
+
+
+section {
+    padding: 1rem;
+}
+
+.container {
+    padding: $spacing-sm $spacing-lg;
+
+    p {
+        margin-top: $spacing-sm * 2;
+    }
+}
+
+

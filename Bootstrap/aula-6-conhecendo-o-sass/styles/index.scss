@@ -1,0 +1,10 @@
+// importando as outros arquivos scss para a folha principal onde tudo sera compilado.
+@use 'variaveis' as *;
+@use 'header';
+@use 'displey'  as *;
+
+.contato {
+   @include flex(column);
+    background-color: $secondary;
+   
+}
