@@ -1,0 +1,42 @@
+.container {
+    background-color: #d7e1e7;
+    border-radius: 1rem;
+    display: flex;
+    gap: 4rem;
+    height: 30rem;
+    margin: 0 auto;
+    pad: 4rem;
+    width: 50rem;
+}
+
+.poster {
+    border:  8px solid #000;
+    box-shadow: 0 24px 32px -16px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 1.75rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+.button {
+    background-color: #121212;
+    border: 0;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding: 0.75rem 1.25rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #333;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
