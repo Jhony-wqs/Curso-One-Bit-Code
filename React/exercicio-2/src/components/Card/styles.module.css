@@ -4,7 +4,7 @@
     display: flex;
     gap: 4rem;
     height: 30rem;
-    margin: 0 auto;
+    margin: 10rem auto;
     pad: 4rem;
     width: 50rem;
 }
@@ -24,19 +24,3 @@
     margin-top: 2rem;
 }
 
-.button {
-    background-color: #121212;
-    border: 0;
-    border-radius: 1rem;
-    color: #fff;
-    font-size: 1rem;
-    margin-top: 2rem;
-    padding: 0.75rem 1.25rem;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: #333;
-    cursor: pointer;
-    margin-left: 0.5rem;
-}
