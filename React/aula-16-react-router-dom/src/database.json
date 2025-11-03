@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Processador AMD Ryzen 5 5600",
+    "description": "6 núcleos, 12 threads, clock base de 3.5GHz e boost até 4.4GHz, ideal para jogos e multitarefa.",
+    "price": 899.90
+  },
+  {
+    "id": 2,
+    "name": "Placa-mãe ASUS Prime B550M-A",
+    "description": "Placa-mãe AM4 com suporte a PCIe 4.0, DDR4 até 128GB e portas M.2 NVMe.",
+    "price": 749.00
+  },
+  {
+    "id": 3,
+    "name": "Memória Kingston Fury Beast 16GB (2x8GB) DDR4 3200MHz",
+    "description": "Kit de memória de alta performance com dissipador de calor e perfil XMP.",
+    "price": 459.90
+  },
+  {
+    "id": 4,
+    "name": "SSD NVMe Kingston KC3000 1TB",
+    "description": "SSD M.2 PCIe 4.0 com velocidade de leitura de até 7000 MB/s.",
+    "price": 679.00
+  },
+  {
+    "id": 5,
+    "name": "Placa de vídeo XFX Radeon RX 7600 8GB",
+    "description": "GPU RDNA3 com excelente desempenho em 1080p e suporte a ray tracing.",
+    "price": 1899.00
+  },
+  {
+    "id": 6,
+    "name": "Fonte Corsair CV550 550W 80 Plus Bronze",
+    "description": "Fonte de alimentação confiável e eficiente, ideal para setups intermediários.",
+    "price": 329.90
+  },
+  {
+    "id": 7,
+    "name": "Gabinete Gamdias Argus E4 Elite",
+    "description": "Gabinete mid tower com vidro temperado e suporte para até 6 ventoinhas.",
+    "price": 379.00
+  },
+  {
+    "id": 8,
+    "name": "Cooler Gamdias Aura GL240 Digital",
+    "description": "Water cooler com display digital e iluminação ARGB personalizável.",
+    "price": 649.00
+  },
+  {
+    "id": 9,
+    "name": "HD Seagate Barracuda 2TB 7200RPM",
+    "description": "Disco rígido confiável e rápido, ideal para armazenamento de jogos e arquivos grandes.",
+    "price": 389.90
+  },
+  {
+    "id": 10,
+    "name": "Monitor AOC 24G2 24'' 144Hz Full HD",
+    "description": "Monitor gamer com painel IPS, taxa de atualização de 144Hz e tempo de resposta de 1ms.",
+    "price": 999.00
+  }
+]
