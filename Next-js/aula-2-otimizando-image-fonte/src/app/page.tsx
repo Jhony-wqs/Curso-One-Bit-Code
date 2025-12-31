@@ -1,6 +1,14 @@
 import Image from "next/image"
 import { Card, Heading } from "@radix-ui/themes";
 import styles from "./page.module.scss";
+import {Science_Gothic} from "next/font/google"
+import "./globals.scss"
+
+const space = Science_Gothic({
+  weight: '400',
+  variable: '--font-gothic',
+  subsets: ["latin"]
+})
 
 
 export default function Home() {
@@ -19,7 +27,7 @@ export default function Home() {
         <Heading as="h1">Olá, Next.js!</Heading>
         <Card>
 
-        <p>Otimização de imagens com Next</p>
+        <p className={` ${space.variable}`}>Otimização de imagens com Next</p>
         <ul>
           <li>
             <div>Via Lactea</div>
