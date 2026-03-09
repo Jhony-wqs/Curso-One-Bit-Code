@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste API Planets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #response {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+        #planets {
+            margin-top: 20px;
+        }
+        .planet {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teste API Planets</h1>
+        
+        <h2>Adicionar Planeta</h2>
+        <input type="text" id="name" placeholder="Nome do planeta">
+        <textarea id="description" placeholder="Descrição do planeta" rows="4"></textarea>
+        <button onclick="addPlanet()">Adicionar Planeta</button>
+        
+        <h2>Resultado</h2>
+        <div id="response"></div>
+        
+        <h2>Listar Planetas</h2>
+        <button onclick="getPlanets()">Buscar Planetas</button>
+        <div id="planets"></div>
+    </div>
+
+    <script>
+        async function addPlanet() {
+            const name = document.getElementById('name').value;
+            const description = document.getElementById('description').value;
+            
+            if (!name || !description) {
+                document.getElementById('response').textContent = 'Erro: Preencha todos os campos!';
+                return;
+            }
+            
+            try {
+                const response = await fetch('http://localhost:3000/api/planets', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        description: description
+                    })
+                });
+                
+                const data = await response.json();
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+                
+                if (response.ok) {
+                    document.getElementById('name').value = '';
+                    document.getElementById('description').value = '';
+                    getPlanets();
+                }
+            } catch (error) {
+                document.getElementById('response').textContent = 'Erro: ' + error.message;
+            }
+        }
+
+        async function getPlanets() {
+            try {
+                const response = await fetch('http://localhost:3000/api/planets');
+                const data = await response.json();
+                
+                let html = '';
+                data.planets.forEach(planet => {
+                    html += `
+                        <div class="planet">
+                            <h3>${planet.name} (ID: ${planet.id})</h3>
+                            <p>${planet.description}</p>
+                        </div>
+                    `;
+                });
+                
+                document.getElementById('planets').innerHTML = html;
+            } catch (error) {
+                document.getElementById('planets').innerHTML = 'Erro: ' + error.message;
+            }
+        }
+
+        // Carregar planetas ao abrir a página
+        getPlanets();
+    </script>
+</body>
+</html>
