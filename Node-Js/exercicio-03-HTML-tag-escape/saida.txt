@@ -1,0 +1,21 @@
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;As Principais Propriedades do Flex&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;h1&gt;As Principais Propriedades do Flex&lt;/h1&gt;
+
+      &lt;div class="flex-container"&gt;
+        &lt;div class="box red flex-item"&gt;1&lt;/div&gt;
+        &lt;div class="box yellow flex-item"&gt;2&lt;/div&gt;
+        &lt;div class="box blue flex-item"&gt;3&lt;/div&gt;
+        &lt;div class="box red flex-item"&gt;4&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
