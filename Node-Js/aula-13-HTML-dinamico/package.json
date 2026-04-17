@@ -1,0 +1,20 @@
+{
+  "name": "aula-13-html-dinamico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "--watch src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "ejs": "^5.0.2",
+    "nodemon": "^3.1.14"
+  }
+}
